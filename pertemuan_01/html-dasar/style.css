@@ -1,0 +1,18 @@
+*{
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+}
+
+.w-fit {
+    background-image: linear-gradient(white, white), linear-gradient(white, #e0e0e0);
+    background-size: 100% 100%, 100% 1px;
+    background-position: 0 0, 0 0;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 5px;
+}
