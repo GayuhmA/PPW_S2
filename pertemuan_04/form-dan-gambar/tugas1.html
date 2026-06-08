@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1: Contoh Tag Form HTML Lanjutan</title>
+  </head>
+  <body>
+    <h2>
+      Contoh Penggunaan
+      <code
+        >&lt;fieldset&gt;, &lt;legend&gt;, &lt;datalist&gt;, &lt;output&gt;,
+        &lt;option&gt;, &lt;optgroup&gt;</code
+      >
+    </h2>
+
+    <form oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+      <fieldset>
+        <legend>Informasi Pribadi & Preferensi</legend>
+
+        <div class="form-group">
+          <label for="browser">Pilih Browser (Datalist):</label>
+          <input
+            list="browsers"
+            name="browser"
+            id="browser"
+            placeholder="Petik untuk mencari..."
+          />
+          <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
+          <p>
+            <small
+              ><i
+                >(Tag <code>&lt;datalist&gt;</code> menyediakan opsi
+                autocomplete untuk input dengan daftar
+                <code>&lt;option&gt;</code>)</i
+              ></small
+            >
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label for="kendaraan">Pilih Kendaraan (Optgroup):</label>
+          <select id="kendaraan" name="kendaraan">
+            <optgroup label="Mobil Eropa">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="Mobil Asia">
+              <option value="toyota">Toyota</option>
+              <option value="honda">Honda</option>
+            </optgroup>
+          </select>
+          <p>
+            <small
+              ><i
+                >(Tag <code>&lt;optgroup&gt;</code> mengelompokkan
+                <code>&lt;option&gt;</code> di dalam drop-down list)</i
+              ></small
+            >
+          </p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Kalkulator Sederhana (Output Tag)</legend>
+        <div class="form-group">
+          <label for="a">Nilai A:</label>
+          <input type="range" id="a" name="a" value="50" />
+        </div>
+        <div class="form-group">
+          <label for="b">Nilai B:</label>
+          <input type="number" id="b" name="b" value="25" />
+        </div>
+
+        <p>
+          <strong>Hasil Penjumlahan (Output):</strong>
+          <output name="x" for="a b">75</output>
+        </p>
+        <p>
+          <small
+            ><i
+              >(Tag <code>&lt;output&gt;</code> menampilkan hasil sebuah
+              perhitungan yang dilakukan oleh skrip di atas)</i
+            ></small
+          >
+        </p>
+      </fieldset>
+
+      <button type="submit">Submit Data</button>
+    </form>
+  </body>
+</html>

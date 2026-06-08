@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbedaan Disabled dan Readonly</title>
+</head>
+<body>
+    <h1>Perbedaan Attribute DISABLED dan READONLY</h1>
+    
+    <h2>Tabel Perbandingan</h2>
+    <table border="1">
+        <tr>
+            <th>Aspek</th>
+            <th>DISABLED</th>
+            <th>READONLY</th>
+        </tr>
+        <tr>
+            <td>Fungsi Utama</td>
+            <td>Menonaktifkan elemen form sepenuhnya</td>
+            <td>Membuat elemen form tidak bisa diedit</td>
+        </tr>
+        <tr>
+            <td>Tampilan</td>
+            <td>Elemen terlihat abu-abu/pucat</td>
+            <td>Elemen terlihat normal</td>
+        </tr>
+        <tr>
+            <td>Interaksi User</td>
+            <td>User tidak bisa berinteraksi sama sekali</td>
+            <td>User bisa memilih dan menyalin isi</td>
+        </tr>
+        <tr>
+            <td>Submit Form</td>
+            <td>Data TIDAK dikirim ke server</td>
+            <td>Data tetap DIKIRIM ke server</td>
+        </tr>
+        <tr>
+            <td>Focus</td>
+            <td>Tidak bisa mendapat focus</td>
+            <td>Bisa mendapat focus</td>
+        </tr>
+        <tr>
+            <td>Tipe Input</td>
+            <td>Semua jenis input</td>
+            <td>Text, password, textarea, email, url, search, tel</td>
+        </tr>
+    </table>
+
+    <h2>Contoh 1: Attribute DISABLED</h2>
+    <form>
+        <label>Nama (Disabled):</label><br>
+        <input type="text" name="nama" value="John Doe" disabled><br><br>
+        
+        <label>Email (Disabled):</label><br>
+        <input type="email" name="email" value="john@example.com" disabled><br><br>
+        
+        <label>Pilih Negara (Disabled):</label><br>
+        <select disabled>
+            <option>Indonesia</option>
+            <option selected>Malaysia</option>
+            <option>Singapura</option>
+        </select><br><br>
+        
+        <p>Catatan: Dengan disabled, elemen terlihat pucat dan user tidak bisa mengubah nilai. Data juga tidak akan dikirim saat form disubmit.</p>
+    </form>
+
+    <h2>Contoh 2: Attribute READONLY</h2>
+    <form>
+        <label>Nama (Readonly):</label><br>
+        <input type="text" name="nama" value="John Doe" readonly><br><br>
+        
+        <label>Email (Readonly):</label><br>
+        <input type="email" name="email" value="john@example.com" readonly><br><br>
+        
+        <label>Catatan (Readonly):</label><br>
+        <textarea name="catatan" readonly>Ini adalah catatan yang tidak bisa diedit oleh user.</textarea><br><br>
+        
+        <p>Catatan: Dengan readonly, elemen terlihat normal dan user bisa memilih/menyalin teks. Data tetap akan dikirim ke server saat form disubmit.</p>
+    </form>
+
+    <h2>Kesimpulan</h2>
+    <p><strong>DISABLED:</strong> Gunakan ketika Anda ingin sepenuhnya menonaktifkan suatu elemen form. Data tidak akan dikirim ke server, dan user tidak bisa berinteraksi dengan elemen tersebut.</p>
+    
+    <p><strong>READONLY:</strong> Gunakan ketika Anda ingin menampilkan informasi yang tidak bisa diedit tetapi tetap perlu dikirim ke server. User bisa memilih dan menyalin teks, tapi tidak bisa mengubahnya.</p>
+</body>
+</html>

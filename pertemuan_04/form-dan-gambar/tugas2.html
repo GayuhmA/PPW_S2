@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Peserta Workshop</title>
+</head>
+<body>
+    <h1>FORM PENDAFTARAN PESERTA WORKSHOP WEB DEVELOPMENT</h1>
+    
+    <img src="https://technophilia.in/wp-content/uploads/2022/02/Web-Development.jpg" alt="Workshop Web Development" width="300" height="200"><br><br>
+    
+    <form>
+        
+        <h2>Data Diri Peserta</h2>
+        
+        <label for="id_peserta">ID Peserta:</label><br>
+        <input type="text" id="id_peserta" name="id_peserta" value="WS-2026-001" readonly><br><br>
+        
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="nomor_telepon">Nomor Telepon:</label><br>
+        <input type="tel" id="nomor_telepon" name="nomor_telepon" placeholder="08xxxxxxxxxx"><br><br>
+        
+        <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br><br>
+        
+        <h2>Pilihan Gender</h2>
+        
+        <input type="radio" id="laki_laki" name="gender" value="Laki-laki">
+        <label for="laki_laki">Laki-laki</label><br>
+        
+        <input type="radio" id="perempuan" name="gender" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+        
+        <h2>Alamat</h2>
+        
+        <label for="alamat">Alamat Lengkap:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="kota">Kota:</label><br>
+        <input type="text" id="kota" name="kota"><br><br>
+        
+        <label for="provinsi">Provinsi:</label><br>
+        <select id="provinsi" name="provinsi" required>
+            <option value="">-- Pilih Provinsi --</option>
+            <option value="Jawa Barat">Jawa Barat</option>
+            <option value="Jawa Tengah">Jawa Tengah</option>
+            <option value="Jawa Timur">Jawa Timur</option>
+            <option value="Sumatera Utara">Sumatera Utara</option>
+            <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+            <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+            <option value="Bali">Bali</option>
+        </select><br><br>
+        
+        <label for="kode_pos">Kode Pos:</label><br>
+        <input type="text" id="kode_pos" name="kode_pos" placeholder="12345"><br><br>
+        
+        <h2>Informasi Workshop</h2>
+        
+        <label for="workshop">Pilih Materi Workshop:</label><br>
+        <select id="workshop" name="workshop" required>
+            <option value="">-- Pilih Workshop --</option>
+            <option value="HTML Dasar">HTML Dasar</option>
+            <option value="CSS Styling">CSS Styling</option>
+            <option value="JavaScript Dasar">JavaScript Dasar</option>
+            <option value="Responsive Design">Responsive Design</option>
+            <option value="Web Framework">Web Framework</option>
+        </select><br><br>
+        
+        <label for="pengalaman">Pengalaman Coding:</label><br>
+        <select id="pengalaman" name="pengalaman">
+            <option value="">-- Pilih Level --</option>
+            <option value="Pemula">Pemula</option>
+            <option value="Menengah">Menengah</option>
+            <option value="Mahir">Mahir</option>
+        </select><br><br>
+        
+        <h2>Pilihan Opsi Tambahan</h2>
+        
+        <input type="checkbox" id="sertifikat" name="sertifikat" value="ya">
+        <label for="sertifikat">Saya ingin mendapatkan sertifikat</label><br>
+        
+        <input type="checkbox" id="networking" name="networking" value="ya">
+        <label for="networking">Saya tertarik mengikuti networking session</label><br>
+        
+        <input type="checkbox" id="materi_digital" name="materi_digital" value="ya">
+        <label for="materi_digital">Saya ingin menerima materi dalam bentuk digital</label><br><br>
+        
+        <h2>Catatan Khusus</h2>
+        
+        <label for="catatan">Catatan atau Pertanyaan:</label><br>
+        <textarea id="catatan" name="catatan" rows="5" cols="50" placeholder="Tuliskan catatan atau pertanyaan Anda di sini..."></textarea><br><br>
+        
+        <img src="https://img.freepik.com/free-photo/credit-card-application-form-concept_53876-148087.jpg?size=626&ext=jpg" alt="Lengkapi Form dengan Benar" width="250" height="150"><br><br>
+        
+        <h2>Konfirmasi</h2>
+        
+        <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+        <label for="setuju">Saya setuju dengan syarat dan ketentuan workshop</label><br><br>
+        
+        <input type="password" id="password" name="password" placeholder="Masukkan password untuk konfirmasi" required><br><br>
+        
+        <label for="tanggal_daftar">Tanggal Pendaftaran:</label><br>
+        <input type="text" id="tanggal_daftar" name="tanggal_daftar" value="04 Maret 2026" readonly><br><br>
+        
+        <h2>Submit Form</h2>
+        
+        <button type="submit" name="submit" value="Daftar">DAFTAR SEKARANG</button>
+        <button type="reset" name="reset" value="Reset">BERSIHKAN FORM</button>
+        <button type="button" disabled>BANTUAN</button>
+        
+    </form>
+</body>
+</html>
