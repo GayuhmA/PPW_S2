@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+
+*.log
+
+.env
+.env.*
+
+.vscode/
+.idea/
+
+# Local assistant/session folders
+.agents/
+.codex/
+.repo.git/
+
+# Reports, archives, and generated documents
+**/laporan/
+**/arsip/
+*.pdf
+*.docx
+*.zip
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# Non-repo course archives
+arsip/
+arsip_lama/
+materi/
+ujian/
+
+# Runtime uploads
+pertemuan_12/php-crud/uploads/*
+!pertemuan_12/php-crud/uploads/.gitkeep
+!pertemuan_12/php-crud/uploads/mahasiswa/
+pertemuan_12/php-crud/uploads/mahasiswa/*
+!pertemuan_12/php-crud/uploads/mahasiswa/.gitkeep
