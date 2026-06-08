@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.profile-card {
+    position: relative;
+    width: 280px;
+    height: 350px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+}
+
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e0ffe0;
+    color: #228B22;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    border: 1px solid #b2d8b2;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 30px auto 15px auto;
+    border: 2px solid #888;
+}
+
+h2 {
+    margin: 10px 0 5px 0;
+    font-size: 20px;
+    color: #222;
+}
+
+p {
+    font-size: 14px;
+    color: #444;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 100;
+}
+
+.bawah{
+    height: 900px;
+    background: #f9f9f9;
+}
