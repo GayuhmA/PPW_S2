@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    transition: background-color 0.3s; 
+}
+
+@media (max-width: 480px) {
+    body { background-color: lightgray; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body { background-color: lightblue; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body { background-color: lightgreen; }
+}
+
+@media (min-width: 1025px) {
+    body { background-color: white; }
+}
