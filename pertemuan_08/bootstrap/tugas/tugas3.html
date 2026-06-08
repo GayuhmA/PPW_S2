@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Nilai Mahasiswa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <h2 class="mb-4">Dashboard Nilai</h2>
+
+      <div class="card mb-4 shadow-sm border-0">
+        <div class="card-body d-flex align-items-center gap-3">
+          <img
+            src="https://ui-avatars.com/api/?name=Gayuh&Mukt&background=primary&color=fff&size=100"
+            alt="Foto Profil"
+            class="rounded-circle border"
+            width="80"
+            height="80"
+          />
+          <div>
+            <h4 class="mb-1">Gayuh Mukti Aji</h4>
+            <p class="text-muted mb-1">NIM: 29291098371 | TRPL</p>
+            <span class="badge bg-success rounded-pill px-3 py-2"
+              >Mahasiswa Aktif</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex align-items-center gap-3">
+              <div class="display-5 text-primary">🎓</div>
+              <div>
+                <h6 class="card-title text-muted mb-1 text-uppercase fw-bold">
+                  Total SKS
+                </h6>
+                <h3 class="card-text mb-0 fw-bold">112</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex align-items-center gap-3">
+              <div class="display-5 text-info">🎯</div>
+              <div>
+                <h6 class="card-title text-muted mb-1 text-uppercase fw-bold">
+                  IPK Saat Ini
+                </h6>
+                <h3 class="card-text mb-0 fw-bold">3.88</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex align-items-center gap-3">
+              <div class="display-5 text-success">✅</div>
+              <div>
+                <h6 class="card-title text-muted mb-1 text-uppercase fw-bold">
+                  Mata Kuliah Lulus
+                </h6>
+                <h3 class="card-text mb-0 fw-bold">38</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-white py-3">
+          <h5 class="mb-0 fw-bold">Daftar Nilai Semester Terakhir</h5>
+        </div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-hover table-striped align-middle mb-0">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col" class="text-center px-3">No</th>
+                  <th scope="col">Mata Kuliah</th>
+                  <th scope="col" class="text-center">SKS</th>
+                  <th scope="col" class="text-center">Nilai Angka</th>
+                  <th scope="col" class="text-center">Nilai Huruf</th>
+                  <th scope="col" class="text-center">Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td>Pemrograman Web</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">92</td>
+                  <td class="text-center">
+                    <span class="badge bg-success px-3 py-2">A</span>
+                  </td>
+                  <td class="text-center">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalDetail1"
+                    >
+                      Detail
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">2</td>
+                  <td>Basis Data Lanjut</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">78</td>
+                  <td class="text-center">
+                    <span class="badge bg-primary px-3 py-2">B</span>
+                  </td>
+                  <td class="text-center">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalDetail2"
+                    >
+                      Detail
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">3</td>
+                  <td>Matematika Diskrit</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">65</td>
+                  <td class="text-center">
+                    <span class="badge bg-warning text-dark px-3 py-2">C</span>
+                  </td>
+                  <td class="text-center">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalDetail3"
+                    >
+                      Detail
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">4</td>
+                  <td>Arsitektur Komputer</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">50</td>
+                  <td class="text-center">
+                    <span class="badge bg-danger px-3 py-2">D</span>
+                  </td>
+                  <td class="text-center">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalDetail4"
+                    >
+                      Detail
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">5</td>
+                  <td>Kecerdasan Buatan</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">40</td>
+                  <td class="text-center">
+                    <span class="badge bg-danger px-3 py-2">E</span>
+                  </td>
+                  <td class="text-center">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalDetail5"
+                    >
+                      Detail
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div
+      class="modal fade"
+      id="modalDetail1"
+      tabindex="-1"
+      aria-labelledby="modalDetail1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDetail1Label">
+              Informasi Mata Kuliah
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Mata Kuliah:</strong> Pemrograman Web
+              </li>
+              <li class="list-group-item">
+                <strong>Dosen Pengampu:</strong> Dr. Budi Santoso, M.Kom
+              </li>
+              <li class="list-group-item">
+                <strong>Status:</strong>
+                <span class="text-success fw-bold">LULUS</span>
+              </li>
+              <li class="list-group-item">
+                <strong>Keterangan:</strong> Sangat Baik. Pertahankan kemampuan
+                di pemrograman web frontend.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalDetail2"
+      tabindex="-1"
+      aria-labelledby="modalDetail2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDetail2Label">
+              Informasi Mata Kuliah
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Mata Kuliah:</strong> Basis Data Lanjut
+              </li>
+              <li class="list-group-item">
+                <strong>Dosen Pengampu:</strong> Prof. Andi Wijaya, S.T., M.T.
+              </li>
+              <li class="list-group-item">
+                <strong>Status:</strong>
+                <span class="text-primary fw-bold">LULUS</span>
+              </li>
+              <li class="list-group-item">
+                <strong>Keterangan:</strong> Pemahaman query kompleks cukup
+                baik.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalDetail3"
+      tabindex="-1"
+      aria-labelledby="modalDetail3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDetail3Label">
+              Informasi Mata Kuliah
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Mata Kuliah:</strong> Matematika Diskrit
+              </li>
+              <li class="list-group-item">
+                <strong>Dosen Pengampu:</strong> Ir. Siti Aminah, M.Si
+              </li>
+              <li class="list-group-item">
+                <strong>Status:</strong>
+                <span class="text-warning fw-bold">LULUS BERSYARAT</span>
+              </li>
+              <li class="list-group-item">
+                <strong>Keterangan:</strong> Perlu lebih mendalami teori graf
+                dan logika matematika.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalDetail4"
+      tabindex="-1"
+      aria-labelledby="modalDetail4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDetail4Label">
+              Informasi Mata Kuliah
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Mata Kuliah:</strong> Arsitektur Komputer
+              </li>
+              <li class="list-group-item">
+                <strong>Dosen Pengampu:</strong> Dr. Hendra Gunawan
+              </li>
+              <li class="list-group-item">
+                <strong>Status:</strong>
+                <span class="text-danger fw-bold">TIDAK LULUS</span>
+              </li>
+              <li class="list-group-item">
+                <strong>Keterangan:</strong> Diwajibkan mengulang pada semester
+                berikutnya.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalDetail5"
+      tabindex="-1"
+      aria-labelledby="modalDetail5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalDetail5Label">
+              Informasi Mata Kuliah
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Mata Kuliah:</strong> Kecerdasan Buatan
+              </li>
+              <li class="list-group-item">
+                <strong>Dosen Pengampu:</strong> Dr. Rina Agustina
+              </li>
+              <li class="list-group-item">
+                <strong>Status:</strong>
+                <span class="text-danger fw-bold">TIDAK LULUS</span>
+              </li>
+              <li class="list-group-item">
+                <strong>Keterangan:</strong> Nilai sangat kurang, kehadiran
+                praktikum tidak memenuhi standar.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
